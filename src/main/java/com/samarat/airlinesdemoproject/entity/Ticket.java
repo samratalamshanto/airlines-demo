@@ -14,11 +14,11 @@ import java.time.LocalDate;
 public class Ticket {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private double ticketPrice;
-    @OneToOne
+    @ManyToOne
     private Route route;
-    @OneToOne
+    @ManyToOne
     private Food food;
     private LocalDate flightDate;
 }

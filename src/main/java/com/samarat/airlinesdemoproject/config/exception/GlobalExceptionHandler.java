@@ -29,7 +29,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     public ResponseEntity<CommonResponse> commonException(Exception ex) {
         printException(ex);
-        CommonResponse commonResponse = new CommonResponse(500, false, "Something went wrong. Please try again.", null);
+        CommonResponse commonResponse = new CommonResponse(500, false, "Something went wrong. Please try again later.", null);
         return new ResponseEntity<>(commonResponse, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 

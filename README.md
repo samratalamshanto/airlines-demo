@@ -19,8 +19,8 @@
 - Docker Application Image(**'Dockerfile'**)
 
 # API List:
-- Swagger URL: http://localhost:9090/swagger-ui/index.html
 - Postman Collection Shared ('**Airlines-Demo-Project.postman_collection.json**')
+- Swagger URL: http://localhost:9090/swagger-ui/index.html
 - Actuator(health) URL: http://localhost:9090/admin/actuator/health
 ![img.png](img.png)
 
@@ -57,6 +57,8 @@ Example 2 (Exception):
 }
 ```
 
-## Guidelines for Run the Project:
-- First clone the git repository.
+## Guidelines for run the project:
+- First clone the git repository. 
+- Run the project. Public Postgresql server added in application properties file. 
 - Using Docker Compose File. Cmd: **docker compose up -d**
+- After this command, it will pull preconfigured Docker images of the PostgreSQL database server from Docker Hub.  

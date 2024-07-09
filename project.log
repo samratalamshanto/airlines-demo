@@ -214,3 +214,226 @@
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
+2024-07-09T17:03:19.906+06:00  INFO 9080 --- [airlines-demo-project] [main] c.s.a.AirlinesDemoProjectApplication     : Starting AirlinesDemoProjectApplication using Java 21.0.2 with PID 9080 (E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project\target\classes started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T17:03:19.908+06:00  INFO 9080 --- [airlines-demo-project] [main] c.s.a.AirlinesDemoProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T17:03:21.281+06:00  INFO 9080 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T17:03:21.370+06:00  INFO 9080 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2024-07-09T17:03:22.549+06:00  INFO 9080 --- [airlines-demo-project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-07-09T17:03:22.569+06:00  INFO 9080 --- [airlines-demo-project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T17:03:22.569+06:00  INFO 9080 --- [airlines-demo-project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T17:03:22.674+06:00  INFO 9080 --- [airlines-demo-project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T17:03:22.675+06:00  INFO 9080 --- [airlines-demo-project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2727 ms
+2024-07-09T17:03:23.145+06:00  INFO 9080 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T17:03:23.287+06:00  INFO 9080 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T17:03:23.361+06:00  INFO 9080 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T17:03:23.734+06:00  INFO 9080 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T17:03:23.767+06:00  INFO 9080 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T17:03:26.194+06:00  INFO 9080 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5807ea46
+2024-07-09T17:03:26.197+06:00  INFO 9080 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T17:03:26.356+06:00  WARN 9080 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T17:03:27.679+06:00  INFO 9080 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T17:03:28.737+06:00  INFO 9080 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T17:03:29.108+06:00  INFO 9080 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T17:03:29.941+06:00  WARN 9080 --- [airlines-demo-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T17:03:32.854+06:00  INFO 9080 --- [airlines-demo-project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/admin/actuator'
+2024-07-09T17:03:32.935+06:00  WARN 9080 --- [airlines-demo-project] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-07-09T17:03:32.938+06:00  INFO 9080 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T17:03:32.948+06:00  INFO 9080 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T17:03:33.268+06:00  INFO 9080 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T17:03:33.295+06:00  INFO 9080 --- [airlines-demo-project] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-09T17:03:33.314+06:00 ERROR 9080 --- [airlines-demo-project] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+2024-07-09T17:03:48.068+06:00  INFO 23704 --- [airlines-demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T17:03:48.076+06:00  INFO 23704 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T17:03:48.991+06:00  INFO 23704 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T17:03:54.446+06:00  INFO 30716 --- [airlines-demo-project] [main] c.s.a.AirlinesDemoProjectApplication     : Starting AirlinesDemoProjectApplication using Java 21.0.2 with PID 30716 (E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project\target\classes started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T17:03:54.448+06:00  INFO 30716 --- [airlines-demo-project] [main] c.s.a.AirlinesDemoProjectApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T17:03:55.488+06:00  INFO 30716 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T17:03:55.542+06:00  INFO 30716 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2024-07-09T17:03:56.203+06:00  INFO 30716 --- [airlines-demo-project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-07-09T17:03:56.217+06:00  INFO 30716 --- [airlines-demo-project] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T17:03:56.218+06:00  INFO 30716 --- [airlines-demo-project] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T17:03:56.299+06:00  INFO 30716 --- [airlines-demo-project] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T17:03:56.299+06:00  INFO 30716 --- [airlines-demo-project] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1799 ms
+2024-07-09T17:03:56.641+06:00  INFO 30716 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T17:03:56.685+06:00  INFO 30716 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T17:03:56.714+06:00  INFO 30716 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T17:03:56.992+06:00  INFO 30716 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T17:03:57.015+06:00  INFO 30716 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T17:03:58.095+06:00  INFO 30716 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@758d4aa9
+2024-07-09T17:03:58.098+06:00  INFO 30716 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T17:03:58.219+06:00  WARN 30716 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T17:03:59.231+06:00  INFO 30716 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T17:04:00.560+06:00  INFO 30716 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T17:04:00.890+06:00  INFO 30716 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T17:04:01.528+06:00  WARN 30716 --- [airlines-demo-project] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T17:04:05.328+06:00  INFO 30716 --- [airlines-demo-project] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/admin/actuator'
+2024-07-09T17:04:05.435+06:00  INFO 30716 --- [airlines-demo-project] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2024-07-09T17:04:05.448+06:00  INFO 30716 --- [airlines-demo-project] [main] c.s.a.AirlinesDemoProjectApplication     : Started AirlinesDemoProjectApplication in 11.377 seconds (process running for 12.189)
+2024-07-09T17:04:05.974+06:00  INFO 30716 --- [airlines-demo-project] [RMI TCP Connection(2)-192.168.0.105] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T17:04:05.974+06:00  INFO 30716 --- [airlines-demo-project] [RMI TCP Connection(2)-192.168.0.105] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T17:04:05.975+06:00  INFO 30716 --- [airlines-demo-project] [RMI TCP Connection(2)-192.168.0.105] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-09T18:50:01.407+06:00  INFO 16464 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Starting TicketServiceTest using Java 21.0.2 with PID 16464 (started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T18:50:01.409+06:00  INFO 16464 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T18:50:01.862+06:00  INFO 16464 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T18:50:01.963+06:00  INFO 16464 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2024-07-09T18:50:02.430+06:00  INFO 16464 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T18:50:02.568+06:00  INFO 16464 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T18:50:02.659+06:00  INFO 16464 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T18:50:03.236+06:00  INFO 16464 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T18:50:03.272+06:00  INFO 16464 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T18:50:04.811+06:00  INFO 16464 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e45a357
+2024-07-09T18:50:04.815+06:00  INFO 16464 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T18:50:04.989+06:00  WARN 16464 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T18:50:06.710+06:00  INFO 16464 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T18:50:07.849+06:00  INFO 16464 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T18:50:08.302+06:00  INFO 16464 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T18:50:10.132+06:00  INFO 16464 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Started TicketServiceTest in 9.294 seconds (process running for 10.833)
+2024-07-09T18:50:11.932+06:00  INFO 16464 --- [airlines-demo-project] [main] .t.d.DockerMachineClientProviderStrategy : docker-machine executable was not found on PATH ([C:\Program Files (x86)\Java\jdk-19.0.2\bin, C:\Program Files (x86)\RSA SecurID Token Common, C:\Windows\system32, C:\Windows, C:\Windows\System32\Wbem, C:\Windows\System32\WindowsPowerShell\v1.0\, C:\Windows\System32\OpenSSH\, C:\Program Files\dotnet\, C:\Program Files\PuTTY\, C:\Program Files (x86)\apache-maven-3.8.6\bin, C:\Program Files (x86)\Gradle\gradle-7.6\bin, E:\Installed Applications\Git\cmd, C:\Users\samrat.alam\AppData\Roaming\nvm, C:\Program Files\nodejs, C:\Program Files\Git\cmd, C:\Program Files\Docker\Docker\resources\bin, C:\Program Files (x86)\Java\jdk-19.0.2\bin, C:\Users\samrat.alam\AppData\Local\Programs\Python\Python311\Scripts\, C:\Users\samrat.alam\AppData\Local\Programs\Python\Python311\, C:\Users\samrat.alam\AppData\Local\Microsoft\WindowsApps, C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.2\bin, , C:\Users\samrat.alam\AppData\Local\Programs\Git\cmd, C:\Users\samrat.alam\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11, C:\Program Files (x86)\MongoDB Atlas CLI\, E:\Applications\Microsoft VS Code\bin, E:\Installed Applications\minikube, C:\Users\samrat.alam\AppData\Roaming\nvm, C:\Program Files\nodejs, C:\Users\samrat.alam\AppData\Local\GitHubDesktop\bin])
+2024-07-09T18:50:11.933+06:00 ERROR 16464 --- [airlines-demo-project] [main] o.t.d.DockerClientProviderStrategy       : Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+	NpipeSocketClientProviderStrategy: failed with exception InternalServerErrorException (Status 500: )As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+2024-07-09T18:50:11.981+06:00  INFO 16464 --- [airlines-demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T18:50:11.996+06:00  INFO 16464 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T18:50:12.944+06:00  INFO 16464 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T18:51:10.732+06:00  INFO 19924 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Starting TicketServiceTest using Java 21.0.2 with PID 19924 (started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T18:51:10.734+06:00  INFO 19924 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T18:51:11.259+06:00  INFO 19924 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T18:51:11.328+06:00  INFO 19924 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interface.
+2024-07-09T18:51:11.720+06:00  INFO 19924 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T18:51:11.798+06:00  INFO 19924 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T18:51:11.838+06:00  INFO 19924 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T18:51:12.156+06:00  INFO 19924 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T18:51:12.192+06:00  INFO 19924 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T18:51:13.391+06:00  INFO 19924 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41f964f9
+2024-07-09T18:51:13.393+06:00  INFO 19924 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T18:51:13.521+06:00  WARN 19924 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T18:51:14.583+06:00  INFO 19924 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T18:51:15.609+06:00  INFO 19924 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T18:51:16.014+06:00  INFO 19924 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T18:51:17.745+06:00  INFO 19924 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Started TicketServiceTest in 7.43 seconds (process running for 8.846)
+2024-07-09T18:51:19.348+06:00  INFO 19924 --- [airlines-demo-project] [main] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-07-09T18:51:19.353+06:00  INFO 19924 --- [airlines-demo-project] [main] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-07-09T18:51:19.377+06:00  INFO 19924 --- [airlines-demo-project] [main] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 26.1.4
+  API Version: 1.45
+  Operating System: Docker Desktop
+  Total Memory: 7807 MB
+2024-07-09T18:51:19.429+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.testcontainers/ryuk:0.7.0             : Pulling docker image: testcontainers/ryuk:0.7.0. Please be patient; this may take some time but only needs to be done once.
+2024-07-09T18:51:24.167+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Starting to pull image
+2024-07-09T18:51:24.200+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pulling image layers:  0 pending,  0 downloaded,  0 extracted, (0 bytes/0 bytes)
+2024-07-09T18:51:29.183+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pulling image layers:  2 pending,  1 downloaded,  0 extracted, (2 MB/? MB)
+2024-07-09T18:51:29.671+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pulling image layers:  1 pending,  2 downloaded,  0 extracted, (3 MB/? MB)
+2024-07-09T18:51:32.465+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pulling image layers:  0 pending,  3 downloaded,  0 extracted, (5 MB/6 MB)
+2024-07-09T18:51:32.648+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pulling image layers:  0 pending,  3 downloaded,  1 extracted, (6 MB/6 MB)
+2024-07-09T18:51:32.779+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pulling image layers:  0 pending,  3 downloaded,  2 extracted, (6 MB/6 MB)
+2024-07-09T18:51:32.846+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pulling image layers:  0 pending,  3 downloaded,  3 extracted, (6 MB/6 MB)
+2024-07-09T18:51:32.864+06:00  INFO 19924 --- [airlines-demo-project] [docker-java-stream--1614444754] tc.testcontainers/ryuk:0.7.0             : Pull complete. 3 layers, pulled in 8s (downloaded 6 MB at 824 KB/s)
+2024-07-09T18:51:32.864+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.testcontainers/ryuk:0.7.0             : Image testcontainers/ryuk:0.7.0 pull took PT13.4348172S
+2024-07-09T18:51:32.901+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.testcontainers/ryuk:0.7.0             : Creating container for image: testcontainers/ryuk:0.7.0
+2024-07-09T18:51:33.053+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 is starting: 253d5fe0accf8831209e55b02359dce3baef4b9f07e6bad1ce676fc20ee89998
+2024-07-09T18:51:33.992+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 started in PT1.091571S
+2024-07-09T18:51:34.000+06:00  INFO 19924 --- [airlines-demo-project] [main] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-07-09T18:51:34.001+06:00  INFO 19924 --- [airlines-demo-project] [main] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-07-09T18:51:34.002+06:00  INFO 19924 --- [airlines-demo-project] [main] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-07-09T18:51:34.003+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-07-09T18:51:34.050+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Container postgres:latest is starting: 237dcf28bf46635f921d43b2d9fdf8ede7e2c3d141f399a1d43eaa3e806ffea0
+2024-07-09T18:51:35.871+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Container postgres:latest started in PT1.8683788S
+2024-07-09T18:51:35.873+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:57832/default?loggerLevel=OFF)
+2024-07-09T18:51:36.335+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-07-09T18:51:36.387+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Container postgres:latest is starting: 6eacf72e7d110e0da3dfc0f1dfe6a31d3ef82cc3a59ea40cfac8841ae6df1f38
+2024-07-09T18:51:37.965+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Container postgres:latest started in PT1.6302491S
+2024-07-09T18:51:37.966+06:00  INFO 19924 --- [airlines-demo-project] [main] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:57861/default?loggerLevel=OFF)
+2024-07-09T18:51:38.475+06:00  INFO 19924 --- [airlines-demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T18:51:38.477+06:00  INFO 19924 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T18:51:38.805+06:00  INFO 19924 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T19:03:30.306+06:00  INFO 18832 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Starting TicketServiceTest using Java 21.0.2 with PID 18832 (started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T19:03:30.308+06:00  INFO 18832 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T19:03:30.723+06:00  INFO 18832 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T19:03:30.792+06:00  INFO 18832 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2024-07-09T19:03:31.206+06:00  INFO 18832 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T19:03:31.276+06:00  INFO 18832 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T19:03:31.315+06:00  INFO 18832 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T19:03:31.681+06:00  INFO 18832 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T19:03:31.710+06:00  INFO 18832 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T19:03:33.161+06:00  INFO 18832 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c15034f
+2024-07-09T19:03:33.165+06:00  INFO 18832 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T19:03:33.308+06:00  WARN 18832 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T19:03:34.882+06:00  INFO 18832 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T19:03:35.990+06:00  INFO 18832 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:03:36.428+06:00  INFO 18832 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T19:03:38.204+06:00  INFO 18832 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Started TicketServiceTest in 8.276 seconds (process running for 13.324)
+2024-07-09T19:03:39.785+06:00  INFO 18832 --- [airlines-demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:03:39.787+06:00  INFO 18832 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T19:03:40.109+06:00  INFO 18832 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T19:09:23.510+06:00  INFO 12864 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Starting TicketServiceTest using Java 21.0.2 with PID 12864 (started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T19:09:23.515+06:00  INFO 12864 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T19:09:24.325+06:00  INFO 12864 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T19:09:24.439+06:00  INFO 12864 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2024-07-09T19:09:25.226+06:00  INFO 12864 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T19:09:25.405+06:00  INFO 12864 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T19:09:25.513+06:00  INFO 12864 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T19:09:26.213+06:00  INFO 12864 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T19:09:26.271+06:00  INFO 12864 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T19:09:27.707+06:00  INFO 12864 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22a63740
+2024-07-09T19:09:27.710+06:00  INFO 12864 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T19:09:27.837+06:00  WARN 12864 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T19:09:29.707+06:00  INFO 12864 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T19:09:30.786+06:00  INFO 12864 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:09:31.368+06:00  INFO 12864 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T19:09:33.786+06:00  INFO 12864 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Started TicketServiceTest in 11.039 seconds (process running for 20.667)
+2024-07-09T19:09:35.675+06:00  INFO 12864 --- [airlines-demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:09:35.679+06:00  INFO 12864 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T19:09:36.315+06:00  INFO 12864 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T19:55:13.270+06:00  INFO 16752 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Starting TicketServiceTest using Java 21.0.2 with PID 16752 (started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T19:55:13.275+06:00  INFO 16752 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T19:55:14.284+06:00  INFO 16752 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T19:55:14.414+06:00  INFO 16752 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2024-07-09T19:55:15.563+06:00  INFO 16752 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T19:55:15.799+06:00  INFO 16752 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T19:55:15.954+06:00  INFO 16752 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T19:55:17.162+06:00  INFO 16752 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T19:55:17.243+06:00  INFO 16752 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T19:55:19.734+06:00  INFO 16752 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a48c398
+2024-07-09T19:55:19.738+06:00  INFO 16752 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T19:55:19.894+06:00  WARN 16752 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T19:55:22.483+06:00  INFO 16752 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T19:55:23.629+06:00  INFO 16752 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:55:24.890+06:00  INFO 16752 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T19:55:28.012+06:00  INFO 16752 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Started TicketServiceTest in 15.634 seconds (process running for 27.552)
+2024-07-09T19:55:31.823+06:00  INFO 16752 --- [airlines-demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:55:31.832+06:00  INFO 16752 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T19:55:36.686+06:00  INFO 16752 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T19:56:55.626+06:00  INFO 9936 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Starting TicketServiceTest using Java 21.0.2 with PID 9936 (started by samrat.alam in E:\Desktop Shortcut\Demo Code\Project\Demo Project\airlines-demo-project)
+2024-07-09T19:56:55.631+06:00  INFO 9936 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T19:56:56.669+06:00  INFO 9936 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T19:56:56.816+06:00  INFO 9936 --- [airlines-demo-project] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2024-07-09T19:56:57.980+06:00  INFO 9936 --- [airlines-demo-project] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T19:56:58.311+06:00  INFO 9936 --- [airlines-demo-project] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T19:56:58.540+06:00  INFO 9936 --- [airlines-demo-project] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T19:57:00.177+06:00  INFO 9936 --- [airlines-demo-project] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T19:57:00.309+06:00  INFO 9936 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T19:57:05.891+06:00  INFO 9936 --- [airlines-demo-project] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a7f9d45
+2024-07-09T19:57:05.899+06:00  INFO 9936 --- [airlines-demo-project] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T19:57:06.140+06:00  WARN 9936 --- [airlines-demo-project] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T19:57:10.806+06:00  INFO 9936 --- [airlines-demo-project] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T19:57:12.655+06:00  INFO 9936 --- [airlines-demo-project] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:57:13.786+06:00  INFO 9936 --- [airlines-demo-project] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-09T19:57:17.832+06:00  INFO 9936 --- [airlines-demo-project] [main] c.s.a.service.TicketServiceTest          : Started TicketServiceTest in 23.397 seconds (process running for 37.247)
+2024-07-09T19:57:23.210+06:00  INFO 9936 --- [airlines-demo-project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T19:57:23.217+06:00  INFO 9936 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T19:57:28.144+06:00  INFO 9936 --- [airlines-demo-project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -15,14 +15,14 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = DateValidationException.class)
     public ResponseEntity<CommonResponse> dateValidationException(DateValidationException ex) {
         printException(ex);
-        CommonResponse commonResponse = new CommonResponse(500, false, ex.getMessage(), null);
+        CommonResponse commonResponse = new CommonResponse(400, false, ex.getMessage(), null);
         return new ResponseEntity<>(commonResponse, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(value = DateParseException.class)
     public ResponseEntity<CommonResponse> dateParseException(DateParseException ex) {
         printException(ex);
-        CommonResponse commonResponse = new CommonResponse(500, false, ex.getMessage(), null);
+        CommonResponse commonResponse = new CommonResponse(400, false, ex.getMessage(), null);
         return new ResponseEntity<>(commonResponse, HttpStatus.BAD_REQUEST);
     }
 

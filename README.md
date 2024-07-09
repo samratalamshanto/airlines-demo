@@ -56,3 +56,7 @@ Example 2 (Exception):
   "data": null
 }
 ```
+
+## Guidelines for Run the Project:
+- First clone the git repository.
+- Using Docker Compose File. Cmd: **docker compose up -d**

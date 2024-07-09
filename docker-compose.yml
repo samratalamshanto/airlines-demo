@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  postgres:
+    container_name: postgres_db
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+
+  application:
+    container_name: application
+    build: .
+    restart: always
+    ports:
+      - "9090:9090"
+    environment:
+      db-url: jdbc:postgresql://postgres_db:5432/postgres
+      db-username: admin
+      db-password: admin
+
+
+networks:
+  custom-networks:
+    driver: bridge

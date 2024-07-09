@@ -1,6 +1,7 @@
 package com.samarat.airlinesdemoproject.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.samarat.airlinesdemoproject.config.exception.DateParseException;
 import com.samarat.airlinesdemoproject.config.exception.DateValidationException;
 import org.springframework.util.ObjectUtils;
@@ -31,6 +32,7 @@ public class Utility {
         }
         try {
             ObjectMapper mapper = new ObjectMapper();
+            mapper.registerModule(new JavaTimeModule());
             return mapper.writeValueAsString(object);
         } catch (Exception e) {
             return "null";

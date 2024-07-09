@@ -23,4 +23,10 @@ public class CommonController {
     public CommonResponse getMaxSaleDateOfAllTime(@RequestParam("selectedDateFrom") String selectedDateFrom, @RequestParam("selectedDateTo") String selectedDateTo) {
         return ticketService.getMaxSaleDateOfAllTime(selectedDateFrom, selectedDateTo);
     }
+
+    @GetMapping("/get-top-three-route")
+    public CommonResponse getTopMaxSaleThreeRoute() {
+        return ticketService.getTopMaxSaleThreeRoute();
+    }
+
 }

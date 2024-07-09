@@ -1,5 +1,6 @@
 package com.samarat.airlinesdemoproject.dto.route;
 
+import com.samarat.airlinesdemoproject.entity.Route;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,7 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RouteMaxSalesDto {
-    private String name;
-    private String description;
+    private Route route;
     private double totalSale;
 }

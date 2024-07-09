@@ -1,6 +1,7 @@
 package com.samarat.airlinesdemoproject.repository;
 
 
+import com.samarat.airlinesdemoproject.dto.route.RouteMaxSalesDto;
 import com.samarat.airlinesdemoproject.dto.ticket.TicketMaxSaleDto;
 import com.samarat.airlinesdemoproject.entity.Ticket;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -21,5 +22,12 @@ public interface TicketRepository extends JpaRepository<Ticket, Long> {
             "group by t.flightDate " +
             "order by sum(t.ticketPrice) desc " )
     List<TicketMaxSaleDto> getMaxSaleDateOfAllTime(LocalDate startDate, LocalDate endDate);
+
+    @Query(value = "SELECT new com.samarat.airlinesdemoproject.dto.route.RouteMaxSalesDto(t.route, sum(t.ticketPrice)) " +
+            "FROM ticket_details as t " +
+            "group by t.route " +
+            "order by sum(t.ticketPrice) desc " +
+            "limit 3 " )
+    List<RouteMaxSalesDto> getTopMaxSaleThreeRoute();
 
 }

@@ -1,6 +1,7 @@
 package com.samarat.airlinesdemoproject.service;
 
 import com.samarat.airlinesdemoproject.dto.CommonResponse;
+import com.samarat.airlinesdemoproject.dto.route.RouteMaxSalesDto;
 import com.samarat.airlinesdemoproject.dto.ticket.TicketMaxSaleDto;
 import com.samarat.airlinesdemoproject.entity.Ticket;
 import com.samarat.airlinesdemoproject.repository.TicketRepository;
@@ -30,9 +31,9 @@ public class TicketService {
     }
 
     public CommonResponse getMaxSaleDateOfAllTime(String selectedDateFrom, String selectedDateTo) {
-        LocalDate startDate1 = LocalDate.parse(selectedDateFrom, pattern);
-        LocalDate endDate1 = LocalDate.parse(selectedDateTo, pattern);
-        List<TicketMaxSaleDto> dtoList = ticketRepository.getMaxSaleDateOfAllTime(startDate1, endDate1);
+        LocalDate startDate = LocalDate.parse(selectedDateFrom, pattern);
+        LocalDate endDate = LocalDate.parse(selectedDateTo, pattern);
+        List<TicketMaxSaleDto> dtoList = ticketRepository.getMaxSaleDateOfAllTime(startDate, endDate);
         CommonResponse commonResponse = new CommonResponse(200, true, "Successfully get max sale date.", null);
         if (dtoList.size() == 0) {
             commonResponse.setMessage("No data found between this time range.");
@@ -46,6 +47,18 @@ public class TicketService {
             }
             commonResponse.setData(finalList);
             dtoList.clear();
+        }
+        return commonResponse;
+    }
+
+
+    public CommonResponse getTopMaxSaleThreeRoute() {
+        List<RouteMaxSalesDto> dtoList = ticketRepository.getTopMaxSaleThreeRoute();
+        CommonResponse commonResponse = new CommonResponse(200, true, "Successfully get top 3 max sales route.", null);
+        if (dtoList.size() == 0) {
+            commonResponse.setMessage("No data found.");
+        } else {
+            commonResponse.setData(dtoList);
         }
         return commonResponse;
     }

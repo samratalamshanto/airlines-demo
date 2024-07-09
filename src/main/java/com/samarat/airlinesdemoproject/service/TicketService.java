@@ -5,11 +5,11 @@ import com.samarat.airlinesdemoproject.dto.route.RouteMaxSalesDto;
 import com.samarat.airlinesdemoproject.dto.ticket.TicketMaxSaleDto;
 import com.samarat.airlinesdemoproject.entity.Ticket;
 import com.samarat.airlinesdemoproject.repository.TicketRepository;
+import com.samarat.airlinesdemoproject.util.Utility;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,10 +17,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TicketService {
     private final TicketRepository ticketRepository;
-    DateTimeFormatter pattern = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public CommonResponse getTotalSaleOfADate(String selectedDate) {
-        LocalDate date = LocalDate.parse(selectedDate, pattern);
+        LocalDate date = Utility.getLocalDateFromString(selectedDate);
         double totalSale = 0.0;
         List<Ticket> ticketList = ticketRepository.findAllByFlightDate(date);
         for (Ticket ticket : ticketList) {
@@ -31,8 +30,9 @@ public class TicketService {
     }
 
     public CommonResponse getMaxSaleDateOfAllTime(String selectedDateFrom, String selectedDateTo) {
-        LocalDate startDate = LocalDate.parse(selectedDateFrom, pattern);
-        LocalDate endDate = LocalDate.parse(selectedDateTo, pattern);
+        LocalDate startDate = Utility.getLocalDateFromString(selectedDateFrom);
+        LocalDate endDate = Utility.getLocalDateFromString(selectedDateTo);
+        Utility.checkAndValidateDateRange(startDate, endDate);
         List<TicketMaxSaleDto> dtoList = ticketRepository.getMaxSaleDateOfAllTime(startDate, endDate);
         CommonResponse commonResponse = new CommonResponse(200, true, "Successfully get max sale date.", null);
         if (dtoList.size() == 0) {

@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "d2cbe3d5-952a-4a6a-9623-c996d1bb874d",
+		"name": "Airlines-Demo-Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23594166"
+	},
+	"item": [
+		{
+			"name": "get-total-amount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/get-total-sale?selectedDate=2024-01-01",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-total-sale"
+					],
+					"query": [
+						{
+							"key": "selectedDate",
+							"value": "2024-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-max-sale",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/get-max-sale?selectedDateFrom=2024-01-01&selectedDateTo=2024-01-31",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-max-sale"
+					],
+					"query": [
+						{
+							"key": "selectedDateFrom",
+							"value": "2024-01-01"
+						},
+						{
+							"key": "selectedDateTo",
+							"value": "2024-01-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "top-3-max-sale-route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/get-top-three-route",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-top-three-route"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:9090/api/v1",
+			"type": "string"
+		}
+	]
+}

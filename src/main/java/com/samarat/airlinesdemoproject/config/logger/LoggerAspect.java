@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -14,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class LoggerAspect {
 
     @Around("within(com.samarat.airlinesdemoproject.service..*)")
-    public Object log(final @NotNull ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object log(final ProceedingJoinPoint joinPoint) throws Throwable {
         final String methodName = joinPoint.getSignature().getName();
         final String className = joinPoint.getTarget().getClass().getSimpleName();
         final Object[] args = joinPoint.getArgs();

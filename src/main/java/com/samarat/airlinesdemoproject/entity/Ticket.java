@@ -1,5 +1,6 @@
 package com.samarat.airlinesdemoproject.entity;
 
+import com.samarat.airlinesdemoproject.dto.ticket.TicketMaxSaleDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
